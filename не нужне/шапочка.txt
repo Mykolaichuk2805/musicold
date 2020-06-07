@@ -1,0 +1,1803 @@
+
+
+<!DOCTYPE html>
+<html lang="ru" siteLang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>uKit - Конструктор сайтов</title>
+	
+	<!-- Убралась проверка на production, так как все файлы итак сжаты -->
+	<link rel="stylesheet" href="/css/lib/bootstrap.css?v=2015_12_24T19_38_00_03_00_7bb09b6d1d861bdffbd44f9316d99c64ad77c171">
+	<link rel="stylesheet" href="/css/base.css?v=2015_12_24T19_38_00_03_00_7bb09b6d1d861bdffbd44f9316d99c64ad77c171">
+	<link rel="stylesheet" href="/css/constructor.css?v=2015_12_24T19_38_00_03_00_7bb09b6d1d861bdffbd44f9316d99c64ad77c171">
+	
+	<script>
+	window.developmentMode = false;
+	
+</script>
+	
+	<script>window.VERSION = "2015_12_24T19_38_00_03_00_7bb09b6d1d861bdffbd44f9316d99c64ad77c171"</script>
+	<script>
+		window.isBrowserWhiteListed  = true;
+		window.isBrowserGraylisted   = false;
+		window.browserSupportIgnored = false;
+	</script>
+	<script>
+		window.constructorMode = true;
+		window.constructorPreviewMode = false;
+	</script>
+</head>
+<body>
+	
+
+
+	
+
+
+	<div id="ul-left-menu">
+		<div class="ul-main-menu">
+			
+			<div class="ul-panel-top">
+				<!-- Почему у нас и логотип и дэшбоард ведут в одно место? (Максим Л) -->
+				<a href="/sites/url/intelligencemuza/dashBoard"><span class="logo"></span></a>
+				<a href="/sites/url/intelligencemuza/dashBoard"><span
+					class="icon-content-panel-dashboard ul-icon ul-icon-secondaryPlus ul-icon-padding"
+					title="Панель управления"></span></a>
+			</div>
+			
+			<div class="ul-panel-middle UL">
+				<span
+					title="Новости"
+					
+						style="display: none;"
+					
+					class="icon-content-pages-blog ul-icon ul-icon-padding js-panel-action"
+					data-action="panel"
+					data-panel="panelBlog"
+					onclick='ga("send", {"hitType":"event","eventCategory":"pages","eventAction":"click"});'
+				></span>
+				<span
+					title="Страницы сайта"
+					class="icon-content-panel-pages ul-icon ul-icon-padding js-panel-action"
+					data-action="panel"
+					data-panel="panelPages"
+					onclick='ga("send", {"hitType":"event","eventCategory":"pages","eventAction":"click"});'
+				></span>
+				<span
+					title="Конструктор"
+					class="icon-content-panel-widgets ul-icon ul-icon-padding js-panel-action active"
+					data-action="panel"
+					data-panel="panelConstructor"
+					onclick='ga("send", {"hitType":"event","eventCategory":"elements","eventAction":"click"});'
+				></span>
+				<span
+					title="Дизайн"
+					class="icon-content-panel-themes ul-icon ul-icon-padding js-panel-action"
+					data-action="panel"
+					data-panel="panelDesign"
+					onclick='ga("send", {"hitType":"event","eventCategory":"design","eventAction":"click"});'
+				></span>
+				<span
+					title="Предпросмотр"
+					class="icon-content-panel-preview ul-icon-padding ul-icon js-panel-action"
+					data-action="panel"
+					data-panel="panelPreview"
+					onclick='ga("send", {"hitType":"event","eventCategory":"site_preview","eventAction":"click"});'
+				></span>
+				
+			</div>
+			
+			<div class="ul-panel-bottom">
+				<span
+					class="icon-content-special-undo ul-icon ul-icon-secondaryPlus ul-icon-padding js-panel-action"
+					data-action="undo"
+					disabled="disabled"
+					title="Отменить"
+				></span>
+				<span
+					class="icon-content-special-redo ul-icon ul-icon-secondaryPlus ul-icon-padding js-panel-action"
+					data-action="redo"
+					disabled="disabled"
+					title="Повторить"
+				></span>
+				<span class="ul-panel-separator"></span>
+				<span
+					class="icon-content-special-history ul-icon ul-icon-secondaryPlus ul-icon-padding js-panel-action"
+					data-action="panel"
+					data-panel="panelBackups"
+					title="Бекапы"
+				></span>
+				
+				
+					
+
+					
+						<span
+							data-date=""
+							data-action="publish"
+							class="ul-site-publish ul-icon ul-icon-padding js-site-publish js-panel-action icon-content-special-publish"
+							
+							title="Опубликовать"
+							data-url="intelligencemuza"
+							onclick='yaCounter27409619.reachGoal("site-on-air");'
+						></span>
+					
+				
+			</div>
+		</div>
+		
+		<div class="ul-menu-content">
+			
+			<div class="ul-menu-desc ul-menu-desc--visible" data-target="panelConstructor" id="ul-panelConstructor">
+	<div class="ul-elements-blocks-nav UL">
+		<ul class="ul-tabs clearfix">
+			<li
+				onclick='ga("send", {"hitType":"event","eventCategory":"elements","eventAction":"click"});'
+				class="active"
+				data-content="widgets"
+				><span>Виджеты</span></li>
+			<li
+				onclick='ga("send", {"hitType":"event","eventCategory":"blocks","eventAction":"click"});'
+				data-content="blocks"
+				><span>Блоки</span></li>
+		</ul>
+	</div>
+	<div class="ul-elements-blocks-content" data-type="widgets">
+		<div class="ul-elements-blocks-content-wrapper clearfix">
+			
+
+<div class="ul-elements-blocks-desc" id="ul-elements">
+	
+	<div class="ul-default-widgets">
+		<ul class="ul-default-widgets-list clearfix">
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="header"
+	
+	title="Заголовок"
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"header","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-header"></span>
+	
+	
+	
+</li>
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="wysiwyg"
+	
+	title="Текст"
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"text","eventAction":"Drag"});' onclick='ga("send", {"hitType":"event","eventCategory":"text-click","eventAction":"click"});'
+>
+	<span class="icon-content-widget-wysiwyg"></span>
+	
+	
+	
+</li>
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="bloquote"
+	
+	title="Цитата"
+	
+>
+	<span class="icon-content-widget-bloquote"></span>
+	
+	
+	
+</li>
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="imagezoom"
+	
+	title="Картинка"
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"picture","eventAction":"Drag"});' onclick='ga("send", {"hitType":"event","eventCategory":"picture-click","eventAction":"click"});'
+>
+	<span class="icon-content-widget-imagezoom"></span>
+	
+	
+	
+</li>
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="gallery"
+	
+	title="Галерея"
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"galery","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-gallery"></span>
+	
+	
+	
+</li>
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="sliderWysiwyg"
+	
+	title="Слайдер"
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"slider","eventAction":"Drag"});' onclick='ga("send", {"hitType":"event","eventCategory":"slider-click","eventAction":"click"});'
+>
+	<span class="icon-content-widget-sliderWysiwyg"></span>
+	
+	
+	
+</li>
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="icon"
+	
+	title="Иконка"
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"icon","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-icon"></span>
+	
+	
+	
+</li>
+			
+				<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="small"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="button"
+	
+	title="Кнопка"
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"button","eventAction":"Drag"});' onclick='ga("send", {"hitType":"event","eventCategory":"button-click","eventAction":"click"});'
+>
+	<span class="icon-content-widget-button"></span>
+	
+	
+	
+</li>
+			
+		</ul>
+	</div>
+	
+	<div class="ul-widgets-groups">
+		
+		<!-- 'basic'  <span class="icon-content-category-star"></span> Базовые -->
+		<!-- 'mmedia'  <span class="icon-content-category-multimedia"></span> Мультимедиа -->
+		<!-- ''  <span class="icon-content-category-different"></span> Весь список -->
+		
+		
+		
+		
+		
+		<div class="ul-widgets-groups-widget">
+			<p class="ul-widgets-groups-title"><span class="icon-content-category-content"></span> Контент</p>
+			<div
+				class="ul-widgets-groups-desc ul-widgets-groups-desc-lg">
+				<ul class="clearfix">
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="goods"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"product","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-goods"></span>
+	
+	
+	<span class="ul-widget-title">Карточка</span>
+	<div class="ul-widget-description">
+		<h2>Карточка</h2>
+		<p>Используйте для оформления описаний товаров, услуг, особенностей, предложений и т.д.</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/goods/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="price"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"price","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-price"></span>
+	
+	
+	<span class="ul-widget-title">Прайс</span>
+	<div class="ul-widget-description">
+		<h2>Прайс</h2>
+		<p>Список ваших товаров или услуг с кратким описанием и ценой</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/price/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="review"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"client_review","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-review"></span>
+	
+	
+	<span class="ul-widget-title">Отзывы</span>
+	<div class="ul-widget-description">
+		<h2>Отзывы</h2>
+		<p>От 1 до 9 отзывов о ваших товарах, услугах или работе</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/review/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="downloadFile"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"file","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-downloadFile"></span>
+	
+	
+	<span class="ul-widget-title">Файл</span>
+	<div class="ul-widget-description">
+		<h2>Файл</h2>
+		<p>Документ, программа или любой другой файл, который можно будет скачать с вашего сайта</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/downloadFile/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="video"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"video","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-video"></span>
+	
+	
+	<span class="ul-widget-title">Видео</span>
+	<div class="ul-widget-description">
+		<h2>Видео</h2>
+		<p>Позволит разместить на сайте видео с youtube  или любого другого видеохостинга</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/video/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="newsInformer"
+	
+	
+	
+>
+	<span class="icon-content-widget-newsInformer"></span>
+	
+	
+	<span class="ul-widget-title">Информер новостей</span>
+	<div class="ul-widget-description">
+		<h2>Информер новостей</h2>
+		<p>Выводит последние добавленные новости</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/newsInformer/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="ecwid"
+	
+	
+	
+>
+	<span class="icon-content-widget-ecwid"></span>
+	
+	
+	<span class="ul-widget-title">Ecwid shop</span>
+	<div class="ul-widget-description">
+		<h2>Ecwid shop</h2>
+		<p>Интернет-магазин</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/ecwid/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="slideshare"
+	
+	
+	
+>
+	<span class="icon-content-widget-slideshare"></span>
+	
+	
+	<span class="ul-widget-title">Slideshare</span>
+	<div class="ul-widget-description">
+		<h2>Slideshare</h2>
+		<p>Сервис для размещения готовых презентаций, текстовых документов и видео</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/slideshare/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="audio"
+	
+	
+	
+>
+	<span class="icon-content-widget-audio"></span>
+	
+	
+	<span class="ul-widget-title">SoundCloud</span>
+	<div class="ul-widget-description">
+		<h2>SoundCloud</h2>
+		<p>Позволят размещать музыкальные треки с сервиса SoundCloud на вашем сайте</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/audio/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="true"
+	data-drag="widget"
+	data-widget="googlesearch"
+	
+	
+	
+>
+	<span class="icon-content-widget-googlesearch"></span>
+	
+	
+	<span class="ul-widget-title">Поиск Google</span>
+	<div class="ul-widget-description">
+		<h2>Поиск Google</h2>
+		<p>Поиск информации на вашем сайте</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/googlesearch/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="yandexSearch"
+	
+	
+	
+>
+	<span class="icon-content-widget-yandexSearch"></span>
+	
+	
+	<span class="ul-widget-title">Яндекс поиск</span>
+	<div class="ul-widget-description">
+		<h2>Яндекс поиск</h2>
+		<p>Поиск по сайту</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/yandexSearch/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="ul-widgets-groups-widget">
+			<p class="ul-widgets-groups-title"><span class="icon-content-category-social"></span> Социальные</p>
+			<div
+				class="ul-widgets-groups-desc ul-widgets-groups-desc-lg">
+				<ul class="clearfix">
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="social"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"social_network","eventAction":"Drag"});' onclick='ga("send", {"hitType":"event","eventCategory":"social_network-click","eventAction":"click"});'
+>
+	<span class="icon-content-widget-social"></span>
+	
+	
+	<span class="ul-widget-title">Соцсети</span>
+	<div class="ul-widget-description">
+		<h2>Соцсети</h2>
+		<p>Набор ссылок на ваши аккаунты или группы в социальных сетях</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/social/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="instagram"
+	
+	
+	
+>
+	<span class="icon-content-widget-instagram"></span>
+	
+	
+	<span class="ul-widget-title">Instagram</span>
+	<div class="ul-widget-description">
+		<h2>Instagram</h2>
+		<p>Фотографии вашего профиля Instagram или по вашему любимому хештегу</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/instagram/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="pinterest"
+	
+	
+	
+>
+	<span class="icon-content-widget-pinterest"></span>
+	
+	
+	<span class="ul-widget-title">Pinterest</span>
+	<div class="ul-widget-description">
+		<h2>Pinterest</h2>
+		<p>Изображения из ваших фото-подборок (досок) в Pinterest</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/pinterest/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="socialGroups"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"c-vk","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-socialGroups"></span>
+	
+	
+	<span class="ul-widget-title">Вконтакте</span>
+	<div class="ul-widget-description">
+		<h2>Вконтакте</h2>
+		<p>Комьюнити вашей группы в социальной сети Вконтакте</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/socialGroups/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="facebookLikeBox"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"c-facebook","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-facebookLikeBox"></span>
+	
+	
+	<span class="ul-widget-title">Facebook</span>
+	<div class="ul-widget-description">
+		<h2>Facebook</h2>
+		<p>Комьюнити вашей группы в социальной сети Facebook</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/facebookLikeBox/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="twitterLikeBox"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"c-twitter","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-twitterLikeBox"></span>
+	
+	
+	<span class="ul-widget-title">Twitter</span>
+	<div class="ul-widget-description">
+		<h2>Twitter</h2>
+		<p>Комьюнити вашей группы в социальной сети twitter</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/twitterLikeBox/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="odnoklassnikiLikeBox"
+	
+	
+	
+>
+	<span class="icon-content-widget-odnoklassnikiLikeBox"></span>
+	
+	
+	<span class="ul-widget-title">Одноклассники</span>
+	<div class="ul-widget-description">
+		<h2>Одноклассники</h2>
+		<p>Комьюнити вашей группы в социальной сети odnoklassniki</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/odnoklassnikiLikeBox/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="absWidget"
+	data-widget="addThisShareBar"
+	
+	
+	
+>
+	<span class="icon-content-widget-addThisShareBar"></span>
+	
+	
+	<span class="ul-widget-title">AddThis сайдбар</span>
+	<div class="ul-widget-description">
+		<h2>AddThis сайдбар</h2>
+		<p>Простой инструмент для добавления панели с кнопками &quot;Поделиться&quot; на ваш сайт</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/addThisShareBar/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="ul-widgets-groups-widget">
+			<p class="ul-widgets-groups-title"><span class="icon-content-category-contacts"></span> Контакты</p>
+			<div
+				class="ul-widgets-groups-desc ul-widgets-groups-desc-lg">
+				<ul class="clearfix">
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="feedBack"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"feedback","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-feedBack"></span>
+	
+	
+	<span class="ul-widget-title">Обратная связь</span>
+	<div class="ul-widget-description">
+		<h2>Обратная связь</h2>
+		<p>Используйте этот виджет для создания формы связи, подачи заявки, оставления отзыва и т.д.</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/feedBack/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="contacts"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"contact_data","eventAction":"Drag"});' onclick='ga("send", {"hitType":"event","eventCategory":"contact_data-click","eventAction":"click"});'
+>
+	<span class="icon-content-widget-contacts"></span>
+	
+	
+	<span class="ul-widget-title">Контакты</span>
+	<div class="ul-widget-description">
+		<h2>Контакты</h2>
+		<p>Адреса и телефоны ваших офисов или ваши личные контактные данные</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/contacts/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="maps"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"map","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-maps"></span>
+	
+	
+	<span class="ul-widget-title">Карта</span>
+	<div class="ul-widget-description">
+		<h2>Карта</h2>
+		<p>Позволяет показать любые нужные вам адреса</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/maps/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="mailchimp"
+	
+	
+	
+>
+	<span class="icon-content-widget-mailchimp"></span>
+	
+	
+	<span class="ul-widget-title">MailChimp</span>
+	<div class="ul-widget-description">
+		<h2>MailChimp</h2>
+		<p>Сервис email-рассылок: добавьте форму на свой сайт и собирайте подписчиков</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/mailchimp/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="absWidget"
+	data-widget="backCall"
+	
+	
+	
+>
+	<span class="icon-content-widget-backCall"></span>
+	
+	
+	<span class="ul-widget-title">Заказать звонок</span>
+	<div class="ul-widget-description">
+		<h2>Заказать звонок</h2>
+		<p>Этот виджет позволит посетителям сайта оставить вам заявку на обратный звонок</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/backCall/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="absWidget"
+	data-widget="liveChat"
+	
+	
+	
+>
+	<span class="icon-content-widget-liveChat"></span>
+	
+	
+	<span class="ul-widget-title">LiveChat</span>
+	<div class="ul-widget-description">
+		<h2>LiveChat</h2>
+		<p>Сервис онлайн чата</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/liveChat/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="absWidget"
+	data-widget="jivosite"
+	
+	
+	
+>
+	<span class="icon-content-widget-jivosite"></span>
+	
+	
+	<span class="ul-widget-title">Jivosite</span>
+	<div class="ul-widget-description">
+		<h2>Jivosite</h2>
+		<p>Общайтесь с посетителями вашего сайта напрямую с помощью онлайн чата</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/jivosite/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="absWidget"
+	data-widget="liveAgent"
+	
+	
+	
+>
+	<span class="icon-content-widget-liveAgent"></span>
+	
+	
+	<span class="ul-widget-title">LiveAgent</span>
+	<div class="ul-widget-description">
+		<h2>LiveAgent</h2>
+		<p>Сервис онлайн чата для вашего сайта</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/liveAgent/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="ul-widgets-groups-widget">
+			<p class="ul-widgets-groups-title"><span class="icon-content-category-layout"></span> Оформление</p>
+			<div
+				class="ul-widgets-groups-desc ">
+				<ul class="clearfix">
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="spacer"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"space","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-spacer"></span>
+	
+	
+	<span class="ul-widget-title">Пробел</span>
+	<div class="ul-widget-description">
+		<h2>Пробел</h2>
+		<p>Для создания пустого пространства между виджетами</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/spacer/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+						<li
+	class="ul-elements-blocks-desc-widget js-drag-widgets"
+	data-size="large"
+	data-single-widget="false"
+	data-drag="widget"
+	data-widget="border"
+	
+	
+	onmousedown='ga("send", {"hitType":"event","eventCategory":"separator","eventAction":"Drag"});'
+>
+	<span class="icon-content-widget-border"></span>
+	
+	
+	<span class="ul-widget-title">Разделитель</span>
+	<div class="ul-widget-description">
+		<h2>Разделитель</h2>
+		<p>Пригодится вам для красивого отделения элементов сайта друг от друга</p>
+		<p class="ul-widget-image">
+			<img class="img-responsive" src="/widgets/border/preview/RU/preview.png" width="364">
+			
+		</p>
+	</div>
+	
+	
+</li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		
+			
+	</div>
+</div>
+
+			
+<div class="ul-elements-blocks-desc" id="ul-blocks">
+	<div class="ul-blocks-group">
+		
+			<div class="ul-blocks text-yellow">
+				<p class="ul-blocks-title" title="В разработке">
+					<span class="icon-content-category-hat"></span> Шапка
+				</p>
+			</div>
+			<div class="ul-blocks text-yellow">
+				<p class="ul-blocks-title" title="В разработке">
+					<span class="icon-content-category-hat icon-rotate-deg-180"></span> Подвал
+				</p>
+			</div>
+			
+			<span class="ul-blocks-separator"></span>
+			<!-- пустые блоки вынесены для всех -->
+			<span class="ul-blocks-separator"></span>
+			
+			<div class="ul-blocks text-secondary">
+				<p class="ul-blocks-title">
+					<span class="icon-content-category-corg"></span> Пустые
+				</p>
+				<div class="ul-blocks-list">
+					<p class="ul-elements-blocks-desc-block js-drag-block ui-draggable ui-draggable-handle" data-preset="blank" data-drag="block" data-id="block-empty">
+						<img src="/img/presets/bg_cont.png" width="296">
+						<span class="ul-block-description">Не прикрепленный к границам экрана</span>
+					</p>
+					<p class="ul-elements-blocks-desc-block js-drag-block ui-draggable ui-draggable-handle" data-preset="blank" data-drag="block" data-id="block-empty-fluid">
+						<img src="/img/presets/bl_cont.png" width="296">
+						<span class="ul-block-description">Прикрепленный к границам экрана</span>
+					</p>
+				</div>
+			</div>
+			
+	</div>
+</div>
+
+		</div>
+	</div>
+</div>
+
+			
+
+<div id="ul-blogPanel" class="UL ul-sp ul-menu-desc" data-target="panelBlog">
+	<h1>Новости</h1>
+	<h2 class="no-border">Показывать</h2>
+	<div class="ul-sp-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" ul-model="data.showPublishDate" id="js-blog-showpublishdates" checked />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Дата публикации</span>
+		</label>
+	</div>
+	<span class="ul-sp-spacer-line-sm"></span>
+	<div class="ul-sp-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" ul-model="data.showAuthor" id="js-blog-showauthor"  />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Автор</span>
+		</label>
+	</div>
+	<span class="ul-sp-spacer-line-sm"></span>
+	<div class="ul-sp-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" ul-model="data.showImage" id="js-blog-showimage" checked />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Изображение</span>
+		</label>
+	</div>
+	<span class="ul-sp-spacer-line-sm"></span>
+	<div class="ul-sp-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" ul-model="data.showReadMore" id="js-blog-showmorebutton" checked />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Кнопка &quot;Читать далее&quot;</span>
+		</label>
+	</div>
+	<span class="ul-sp-spacer-sm"></span>
+	<div class="ul-sp-range">
+		<div id="js-blog-posts-limit"
+			ul-model="data.postsLimit"
+			class="ul-range ul-range--with-points"
+			data-min="5"
+			data-max="20"
+			data-val="10"
+			data-title="Записей на странице"
+			data-points="5,10,15,20"
+			data-numbers="5,10,15,20"
+			data-step="1">
+		</div>
+	</div>
+</div>
+
+			<div id="ul-postPanel" class="UL ul-sp ul-menu-desc">
+	<p class="ul-back-btn js-back-click js-post-back-click">Назад к списку</p>
+	<h1>Запись</h1>
+	
+	<div id="js-action-published-text" class="ul-sp-content" style="display: none;">
+		<!--<span id="published-button-link" class="ul-button-link">
+			Запись опубликована
+		</span>-->
+		<p id="published-button-link" class="accent-green">
+			<span class="ul-margin-right-xsm icon-content-special-check"></span>
+			Запись опубликована
+		</p>
+		<p>Изменения в записи попадают сразу на сайт</p>
+	</div>
+	
+	<div class="ul-sp-button">
+		<button id="js-blog-post-draft" class="w-100p" type="submit"></button>
+	</div>
+	
+	<h2 class="no-border">Элементы записи</h2>
+	<div class="ul-sp-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" id="js-blog-post-panel-showimage" ul-model="showImage" />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Изображение</span>
+		</label>
+	</div>
+	<span class="ul-sp-spacer-line-sm"></span>
+	<div class="ul-sp-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" id="js-blog-post-panel-showauthor" ul-model="showAuthor" />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Автор</span>
+		</label>
+	</div>
+	
+	<div class="ul-sp-titleBtn ul-icons-right-1">
+		<h2 id="js-blog-post-seo-settings" class="js-blog-post-seo-arrow">
+			SEO настройки
+			<span class="ul-icons-right">
+				<span class="ul-icon icon-content-special-arrow-right-big"></span>
+			</span>
+		</h2>
+	</div>
+	
+	
+	<h2 class="no-border">Сервисы</h2>
+	<!-- Социальные сети -->
+	<div class="ul-sp-switcher js-sub-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" id="js-blog-post-panel-showshare" ul-model="showShare" />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Социальные кнопки</span>
+		</label>
+	</div>
+	
+	<div class="ul-sp-sub no-offsets" id="js-showShareAdditional">
+		<div class="ul-sp-switcher">
+			<label class="ul-radio">
+				<input type="radio" name="shareType" ul-model="shareType" value="yashare">
+				<span class="ul-fake-input"></span>
+				<span class="ul-fake-input-text">YaShare</span>
+			</label>
+		</div>
+		<div class="ul-sp-switcher">
+			<label class="ul-radio">
+				<input type="radio" name="shareType" ul-model="shareType" value="addthis">
+				<span class="ul-fake-input"></span>
+				<span class="ul-fake-input-text">AddThis</span>
+			</label>
+		</div>
+	</div>
+	<!-- END Социальные сети -->
+	
+	<span class="ul-sp-spacer-line-sm"></span>
+	<div class="ul-sp-switcher">
+		<label class="ul-checkbox-switch opposite">
+			<input type="checkbox" id="js-blog-post-panel-showcomments" ul-model="showComments" />
+			<span class="ul-fake-input"></span>
+			<span class="ul-fake-input-text">Комментарии</span>
+		</label>
+	</div>
+	<div id="js-disqus-err-message" class="ul-sp-content">
+	</div>
+</div>
+
+			<div class="ul-menu-desc UL ul-sp" data-target="panelPages" id="ul-panelPages">
+	<h1>Страницы</h1>
+	<ul class="ul-panelPages-pageslist">
+		
+			
+			<li class="ul-pageslist-item  js-page " data-pageId="about" data-page-type="common" data-id-unique="567c2e6b89f293e635f7b75e">
+	<!-- для главной добавляем класс ul-pageslist-index , а для новой ul-pageslist-new-->
+	<span class="icon-content-special-dotted-3 ul-pageslist-sortable"></span>
+	<span class="ul-pageslist-title">
+		
+		<!--<span class="icon-content-pagesmini-blog"></span>--> <!-- Показывать если type = blog. Для это надо пробросить type-->
+		О нас
+	</span>
+	<span class="ul-pageslist-icons">
+		
+		<span class="icon-content-special-copy ul-icon ul-pageslist-copy ul-icon-padding js-btn-panel-page" data-btn="copy" title="Дублировать"></span>
+		
+		<span class="icon-content-special-settings ul-icon ul-pageslist-settings ul-icon-padding js-btn-panel-page" data-btn="setting" title="Настройки"></span>
+		<span class="icon-content-special-remove ul-pageslist-remove ul-icon ul-icon-padding js-btn-panel-page" data-btn="remove" title="Удалить"></span>
+	</span>
+	<span class="icon-content-special-home ul-pageslist-home ul-icon ul-icon-padding"></span>
+</li>
+
+		
+			
+			<li class="ul-pageslist-item  js-page " data-pageId="contacts" data-page-type="common" data-id-unique="567c2e6b89f293e635f7b759">
+	<!-- для главной добавляем класс ul-pageslist-index , а для новой ul-pageslist-new-->
+	<span class="icon-content-special-dotted-3 ul-pageslist-sortable"></span>
+	<span class="ul-pageslist-title">
+		
+		<!--<span class="icon-content-pagesmini-blog"></span>--> <!-- Показывать если type = blog. Для это надо пробросить type-->
+		Контакты
+	</span>
+	<span class="ul-pageslist-icons">
+		
+		<span class="icon-content-special-copy ul-icon ul-pageslist-copy ul-icon-padding js-btn-panel-page" data-btn="copy" title="Дублировать"></span>
+		
+		<span class="icon-content-special-settings ul-icon ul-pageslist-settings ul-icon-padding js-btn-panel-page" data-btn="setting" title="Настройки"></span>
+		<span class="icon-content-special-remove ul-pageslist-remove ul-icon ul-icon-padding js-btn-panel-page" data-btn="remove" title="Удалить"></span>
+	</span>
+	<span class="icon-content-special-home ul-pageslist-home ul-icon ul-icon-padding"></span>
+</li>
+
+		
+			
+			<li class="ul-pageslist-item  active  js-page ul-pageslist-index" data-pageId="index" data-page-type="common" data-id-unique="567c2e6b89f293e635f7b755">
+	<!-- для главной добавляем класс ul-pageslist-index , а для новой ul-pageslist-new-->
+	<span class="icon-content-special-dotted-3 ul-pageslist-sortable"></span>
+	<span class="ul-pageslist-title">
+		
+		<!--<span class="icon-content-pagesmini-blog"></span>--> <!-- Показывать если type = blog. Для это надо пробросить type-->
+		Главная
+	</span>
+	<span class="ul-pageslist-icons">
+		
+		<span class="icon-content-special-copy ul-icon ul-pageslist-copy ul-icon-padding js-btn-panel-page" data-btn="copy" title="Дублировать"></span>
+		
+		<span class="icon-content-special-settings ul-icon ul-pageslist-settings ul-icon-padding js-btn-panel-page" data-btn="setting" title="Настройки"></span>
+		<span class="icon-content-special-remove ul-pageslist-remove ul-icon ul-icon-padding js-btn-panel-page" data-btn="remove" title="Удалить"></span>
+	</span>
+	<span class="icon-content-special-home ul-pageslist-home ul-icon ul-icon-padding"></span>
+</li>
+
+		
+			
+			<li class="ul-pageslist-item  js-page " data-pageId="news" data-page-type="blog" data-id-unique="567c2e6b89f293e635f7b758">
+	<!-- для главной добавляем класс ul-pageslist-index , а для новой ul-pageslist-new-->
+	<span class="icon-content-special-dotted-3 ul-pageslist-sortable"></span>
+	<span class="ul-pageslist-title">
+		
+			<span class="icon-content-pagesmini-blog ul-pageslist-item-blog"></span>
+		
+		<!--<span class="icon-content-pagesmini-blog"></span>--> <!-- Показывать если type = blog. Для это надо пробросить type-->
+		Новости
+	</span>
+	<span class="ul-pageslist-icons">
+		
+		<span class="icon-content-special-copy ul-icon ul-pageslist-copy ul-icon-padding js-btn-panel-page" data-btn="copy" title="Дублировать"></span>
+		
+		<span class="icon-content-special-settings ul-icon ul-pageslist-settings ul-icon-padding js-btn-panel-page" data-btn="setting" title="Настройки"></span>
+		<span class="icon-content-special-remove ul-pageslist-remove ul-icon ul-icon-padding js-btn-panel-page" data-btn="remove" title="Удалить"></span>
+	</span>
+	<span class="icon-content-special-home ul-pageslist-home ul-icon ul-icon-padding"></span>
+</li>
+
+		
+			
+			<li class="ul-pageslist-item  js-page " data-pageId="repertory" data-page-type="common" data-id-unique="567c2e6b89f293e635f7b757">
+	<!-- для главной добавляем класс ul-pageslist-index , а для новой ul-pageslist-new-->
+	<span class="icon-content-special-dotted-3 ul-pageslist-sortable"></span>
+	<span class="ul-pageslist-title">
+		
+		<!--<span class="icon-content-pagesmini-blog"></span>--> <!-- Показывать если type = blog. Для это надо пробросить type-->
+		Репертуар
+	</span>
+	<span class="ul-pageslist-icons">
+		
+		<span class="icon-content-special-copy ul-icon ul-pageslist-copy ul-icon-padding js-btn-panel-page" data-btn="copy" title="Дублировать"></span>
+		
+		<span class="icon-content-special-settings ul-icon ul-pageslist-settings ul-icon-padding js-btn-panel-page" data-btn="setting" title="Настройки"></span>
+		<span class="icon-content-special-remove ul-pageslist-remove ul-icon ul-icon-padding js-btn-panel-page" data-btn="remove" title="Удалить"></span>
+	</span>
+	<span class="icon-content-special-home ul-pageslist-home ul-icon ul-icon-padding"></span>
+</li>
+
+		
+	</ul>
+	<p class="ul-sp-button">
+		<span
+			onclick='ga("send", {"hitType":"event","eventCategory":"add_page","eventAction":"click"});'
+			class="ul-button-link js-page-add"
+		>
+			<span class="icon-content-special-plus"></span>
+			Добавить страницу
+		</span>
+	</p>
+</div>
+
+			
+
+<div class="ul-menu-desc UL ul-sp" data-target="panelDesign" id="ul-panelDesign">
+	<h1>Дизайн</h1>
+
+	<h2 class="no-border">Цветовая схема</h2>
+
+	<div class="ul-color-scheme">
+		
+		<p 
+			onclick='ga("send", {"hitType":"event","eventCategory":"design-colour_theme","eventAction":"click"});'
+			class="js-site-settings-palette g-theme-site-3 "
+			data-theme="g-theme-site-3"
+		>
+			
+			<span class="g-theme-block-1" data-themeBlock="g-theme-block-1"></span>
+			
+			<span class="g-theme-block-2" data-themeBlock="g-theme-block-2"></span>
+			
+			<span class="g-theme-block-3" data-themeBlock="g-theme-block-3"></span>
+			
+			<span class="g-theme-block-4" data-themeBlock="g-theme-block-4"></span>
+			
+		</p>
+		
+		<p 
+			onclick='ga("send", {"hitType":"event","eventCategory":"design-colour_theme","eventAction":"click"});'
+			class="js-site-settings-palette g-theme-site-2 active"
+			data-theme="g-theme-site-2"
+		>
+			
+			<span class="g-theme-block-1" data-themeBlock="g-theme-block-1"></span>
+			
+			<span class="g-theme-block-2" data-themeBlock="g-theme-block-2"></span>
+			
+			<span class="g-theme-block-3" data-themeBlock="g-theme-block-3"></span>
+			
+			<span class="g-theme-block-4" data-themeBlock="g-theme-block-4"></span>
+			
+		</p>
+		
+		<p 
+			onclick='ga("send", {"hitType":"event","eventCategory":"design-colour_theme","eventAction":"click"});'
+			class="js-site-settings-palette g-theme-site-1 "
+			data-theme="g-theme-site-1"
+		>
+			
+			<span class="g-theme-block-1" data-themeBlock="g-theme-block-1"></span>
+			
+			<span class="g-theme-block-2" data-themeBlock="g-theme-block-2"></span>
+			
+			<span class="g-theme-block-3" data-themeBlock="g-theme-block-3"></span>
+			
+			<span class="g-theme-block-4" data-themeBlock="g-theme-block-4"></span>
+			
+		</p>
+		
+	</div>
+	
+	<h2>Фон сайта</h2>
+
+	<ul class="ul-colors js-background-settings-color g-theme-site-2">
+		
+		<li class="g-theme-block-1 active " data-themeBlock="g-theme-block-1"></li>
+		
+		<li class="g-theme-block-2  " data-themeBlock="g-theme-block-2"></li>
+		
+		<li class="g-theme-block-3  " data-themeBlock="g-theme-block-3"></li>
+		
+		<li class="g-theme-block-4  " data-themeBlock="g-theme-block-4"></li>
+		
+		<li class="image " data-themeBlock="g-theme-block-5" title="Изображение"><span class="icon-content-large-imagepicker"></span></li>
+	</ul>
+
+	<!-- Когда активна картика то показываем sub  -->
+	<div class="ul-sp-sub-no-sub no-offsets js-image-background-setting" 
+		 
+			style="display:none"
+		
+	>
+		<span class="ul-sp-spacer-md"></span>
+		<div class="ul-background-image">
+			<span 
+				class="ul-image-with-hover ul-image-background js-image-lib-open empty"
+				
+			>
+				
+			</span>
+			<p class="ul-sp-button-link ul-image-fine-tune ul-noActive">
+			<!-- style="display: none;" -->
+				<span
+					class="ul-button-link-white js-ul-site-styles-image-settings"
+					
+				>
+					<span class="icon-content-special-settings"></span>
+					Тонкие настройки
+				</span>
+			</p>
+		</div>
+	</div>
+
+<span class="ul-sp-spacer-xsm"></span>
+<div class="ul-sp-switcher js-this_page">
+	<label class="ul-checkbox-switch opposite">
+		<input type="checkbox">
+		<span class="ul-fake-input"></span>
+		<span class="ul-fake-input-text">Применять фон только для текущей страницы</span>
+	</label>
+</div>
+
+<span class="ul-sp-spacer-xsm"></span>
+
+<h2>Кнопка &quot;Наверх&quot;</h2>
+<!-- Кнопка &laquo;наверх&raquo; -->
+
+<div class="ul-sp-switcher js-btn-up">
+	<label class="ul-checkbox-switch opposite">
+		<input type="checkbox" checked >
+		<span class="ul-fake-input"></span>
+		<span class="ul-fake-input-text">Показывать кнопку</span>
+	</label>
+</div>
+<!--<div id="siteBackgroundSettings"></div>-->
+</div>
+
+			<div id="ul-historyPanel" class="ul-menu-desc UL ul-sp" data-target="panelBackups">
+	<h1>Бекапы</h1>
+	
+	<div class="ul-sp-button-link ul-margin-top--sm">
+		<span class="ul-button-link js-historyPanel-backups-add"><span class="icon-content-special-plus"></span>Создать бекап</span>
+	</div>
+	
+	<div class="ul-backup">
+		<div class="ul-backup-items">
+		</div>
+
+		<div class="ul-backup-user-filter-container">
+			<label class="ul-checkbox-switch opposite js-backup-user-filter-container" style="display: none">
+				<input id="js-backup-user-filter" type="checkbox" checked="">
+				<span class="ul-fake-input"></span>
+				<span class="ul-fake-input-text">Показать только ручные</span>
+			</label>
+		</div>
+	</div>
+</div>
+			
+			
+			
+			<div class="ul-menu-desc" id="ul-panelDialog"></div>
+			<div class="" id="ul-panelDialog-stack" style="display: none"></div>
+		</div>
+		
+		<div class="ul-drop-remove ul-drop-remove-hide">
+			<div class="ul-drop-remove-fakeview">
+				<span class="icon-content-large-remove"><span>Удалить</span></span>
+			</div>
+		</div>
+	</div>
+	
+	<div id="ul-main" class="ul-site-loading">
+		<div id="body" class="g-theme-site-2">
+			<div
+				id="body-fict"
+				class="g-theme-block-1"
+				data-block_theme="g-theme-block-1"
+				style=""
+				data-parallax="none"
+				
+				
+			></div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- КНОПКА ВВЕРХ -->
+	<div
+		id="upbutton-container"
+		class="ul-upbutton"
+		style=""
+	>
+		<div class="ul-upbutton-icon"></div>
+	</div>
+	
+	
+	
+
+<div class="ul-preview-panel UL ul-sp">
+	<div id="ul-preview-controls" class="ul-preview-controls ul-preview-controls--left">
+		<span class="ul-back-btn ul-preview-controls__back js-preview-action" data-mode="back">Назад</span>
+		<span class="ul-preview-controls__device">
+			<span class="ul-icon ul-icon-padding icon-content-devices-desktop js-preview-action active" data-mode="desktop" title="Экран монитора"></span>
+		</span>
+		<span class="ul-preview-controls__device">
+			<span class="ul-icon ul-icon-padding icon-content-devices-tablet js-preview-action icon-rotate-deg-90" data-mode="tablet-g"  title="Экран планшета"></span>
+		</span>
+		<span class="ul-preview-controls__device">
+			<span class="ul-icon ul-icon-padding icon-content-devices-tablet js-preview-action" data-mode="tablet"  title="Экран планшета"></span>
+		</span>
+		<span class="ul-preview-controls__device">
+			<span class="ul-icon ul-icon-padding icon-content-devices-phone js-preview-action icon-rotate-deg-90" data-mode="phone-g"  title="Экран телефона"></span>
+		</span>
+		<span class="ul-preview-controls__device">
+			<span class="ul-icon ul-icon-padding icon-content-devices-phone js-preview-action" data-mode="phone" title="Экран телефона"></span>
+		</span>
+	</div>
+	<div class="ul-preview-controls ul-preview-controls--right">
+		<span class="ul-preview-text">Адрес сайта</span>
+		<a href="http://intelligencemuza.ulcraft.com" target="_blank" class="ul-preview-link">intelligencemuza.ulcraft.com</a><!--
+		--><span
+			title="Опубликовать"
+			data-date=""
+			class="ul-button-yellow ul-preview-publish js-preview-publish  "
+			
+		>
+			<span class="icon-content-special-publish ul-preview-publish__icon-publish"></span><span class="icon-content-special-check ul-preview-publish__icon-published"></span><span class="ul-preview-publish__text-publish">Опубликовать</span><span class="ul-preview-publish__text-published">Опубликовано</span>
+		</span>
+	</div>
+</div>
+
+	
+	
+		<div id="ul-publish-tooltip">
+			<span class="ul-publish-tooltip-text">
+				<span class="ul-publish-tooltip-icon"></span>
+				Опубликуйте сайт, пусть о нем узнают!
+			</span>
+			<span class="ul-publish-tooltip-arrow"></span>
+		</div>
+	
+	
+	<span id="ul-drag-tooltip-image">
+		<span class="ul-drag-tooltip-txt">
+			Перетащите Виджет на сайт, зажав левую кнопку мыши
+		</span>
+	</span>
+	
+	<script>window.cache = {"isTemplateServer":false,"pageUrl":"/sites/url/intelligencemuza/pages/id/index/edit","pageId":"index","page":"index","site":"intelligencemuza","templateThemes":[],"pageType":"common","siteTheme":"g-theme-site-2","fieldSiteName":"Копилка Текстов","subjectId":"music","schemaOrg":{"stylist":"HealthAndBeautyBusiness","nailmaster":"NailSalon","restaurant":"Restaurant","taxi":"TaxiStand","tourism":"TravelAgency"},"headerFooterTheme":"g-theme-block-0 g-theme-block-1","version":"2015_12_24T19_38_00_03_00_7bb09b6d1d861bdffbd44f9316d99c64ad77c171","useNewMainmenu":true,"proUser":false}</script>
+	<script src="/js/lib/requirejs.min.js"></script>
+
+
+	<script src="/js/requireConf.js?v=2015_12_24T19_38_00_03_00_7bb09b6d1d861bdffbd44f9316d99c64ad77c171"></script>
+	
+	<script src="/js/constructor/app.build.js?v=2015_12_24T19_38_00_03_00_7bb09b6d1d861bdffbd44f9316d99c64ad77c171"></script>
+	
+	
+	
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	window.yaCounter27409619 = {
+		reachGoal: function () {}
+	};
+	
+	(function (d, w) {
+		var
+			c = "yandex_metrika_callbacks";
+		
+		if ( ! w.analyticsHandlers) {
+			w.analyticsHandlers = {};
+		}
+		
+		if ( ! w.analyticsHandlers['yandexMetrika.mainId']) {
+			w.analyticsHandlers['yandexMetrika.mainId'] = '27409619';
+		}
+		
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter27409619 = new Ya.Metrika(
+					{"id":27409619,"webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true,"trackHash":true}
+				);
+			} catch(e) {
+			}
+		});
+		
+		var
+			n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () {
+				n.parentNode.insertBefore(s, n);
+			};
+			
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "//mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else {
+			f();
+		}
+	})(document, window);
+</script>
+
+<noscript>
+	<div>
+		<img src="//mc.yandex.ru/watch/27409619" style="position:absolute; left:-9999px;" alt="" />
+	</div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+<!-- MouseFlow -->
+<script type="text/javascript">
+	
+	require.config({
+		paths: {"jquery": "js/lib/jquery-2.1.0.min"}
+	});
+	
+	require(['jquery'], function($) {
+		var _mfq = _mfq || [];
+		
+		(function() {
+			var
+				mf = document.createElement("script");
+			
+			mf.type = "text/javascript";
+			mf.async = true;
+			mf.src = "//cdn.mouseflow.com/projects/57fc317b-a008-4dc7-a68f-51f60fbfd500.js";
+			
+			document.getElementsByTagName("head")[0].appendChild(mf);
+		})();
+	});
+</script>
+<!-- End MouseFlow -->
+
+
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="//www.googletagmanager.com/ns.html?id=GTM-TT76DT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script>
+	window.ga = function () {
+	};
+	
+	(function (w, d, s, l, i) {
+		
+		(w[l] || []).push({
+			'gtm.start': new Date().getTime(),
+			event:'gtm.js'
+		});
+		
+		var
+			f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),
+			dl = l != 'dataLayer' ? '&l=' + l : '';
+			
+		j.async = true;
+		j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+		
+	})(window, document, 'script', 'dataLayer', 'GTM-TT76DT');
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+<!-- Targetix -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function (event) {
+			
+			window._txq = window._txq || [];
+			
+			var s = document.createElement('script');
+			
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = '//st.targetix.net/txsp.js';
+			
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+			
+			_txq.push(['createPixel', '556c5df9870a8e89c4d7b1a1']);
+			_txq.push(['track', 'PageView']);
+		});
+	</script>
+	<!-- /Targetix -->
+
+	
+
+
+	
+	
+
+	
+
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<html>
+	<head>
+	<title></title>
+ 	</head>
+ 
+	<body>
+	</body>
+ 
+</html>
+
+
+			   <p>Параграф.</p>
+			   <b>Текст жирным шрифтом.</b>
+			   <h1>Заголовок</h1>
+			   <h2>Подзаголовок</h2>
+			   <h3>Под-подзаголовок</h3> 
+			   <i>Italic</i>
+			   <small>Уменьшенный шрифт</small>
+			   <br /> перевод строки
+			   <hr /> Горизонтальная линия
+			   <ul>Список</ul>
+			   <ol>Упорядоченный список</ol>
+			   <li>Элемент списка</li>
+			   <table> - начало и конец таблицы
+			   <tr>  - "table row/ряд таблицы
+			   <td>  - сокращение от "table data/табличные данные". 
+			   <style type="text/css"> - тег
+			   <i>Это должно быть выведено курсивом.</i>
+			   <small>Это будет выведено уменьшенным шрифтом.</small>
+ 			   <b><i>Текст bold и italic</i></b>
+Colspan - сокращение от "column span/охват столбцов" - атрибут
+rowspan специфицирует, сколько рядов охватывает данная ячейка - атрибут
+Элемент a обозначает "якорь/anchor"
+Атрибут href это сокращение от "hypertext reference/гипертекстовая ссылка"
+align: специфицирует выравнивание содержимого всей таблицы по горизонтали, в ряду или в отдельной ячейке. Например, left, center или right.
+valign: специфицирует выравнивание по вертикали в ячейке. Например, top, middle или bottom.
+
+Некоторый текст<br /> и ещё текст, уже на новой строке
+тэг - <hr /> - рисует горизонтальную линию ("hr" от "horizontal rule")
+<ul> - сокращение от "unordered list/неупорядоченный список" - вставляет значок кнопки для каждого элемента списка
+<ol> - сокращение от "ordered list/упорядоченный список" - нумерует каждый элемент списка
+h2 style="background-color:#ff0000;">Мой друг HTML</h2> - атрибут
+<body style="background-color: red;">
+<p style="background-color:#ff0000;">)
+<a href="http://www.html.net/">Это ссылка на HTML.net</a>
+<img src="david.jpg" alt="David" />
+
+Белый: #ffffff
+Чёрный: #000000 (нули)
+Красный: #ff0000
+Синий: #0000ff
+Зелёный: #00ff00
+Жёлтый: #ffff00
+
+			   <p style="font-size:20px;">Это напечатано размером 20</p>
+			   <p style="font-family:courier;">Это напечатано шрифтом Courier</p>
+			   <p style="font-size:20px; font-family:courier">Это напечатано шрифтом Courier размером 20</p>
+
+			   <p style="color:green;">Зелёный текст</p>
+			   <h1 style="background-color: blue;">Заголовок на синем фоне<h1>
+			   <body style="background-image: XXX;">
+
+
+   <html>
+	 <head>
+	 <title>My web-сайт</title>
+	 </head>
+ 
+	 <body>
+	 <h1>A Heading</h1>
+	 <p>text, text text, text</p>
+	 <h2>Subhead</h2>
+	 <p>text, text text, text</p>
+	 </body>
+ </html>
+
+
+
+ <ul>
+	<li>Элемент списка</li>
+	<li>Другой элемент списка</li>
+</ul>
+
+
+
+<ol>
+	 <li>Первый элемент списка</li>
+	 <li>Второй элемент списка</li>
+</ol>
+
+
+
+
+<a href="page2.htm">Щёлкните здесь для перехода на page 2</a>
+
+<a href="subfolder/page2.htm">Щёлкните здесь для перехода на page 2</a>
+
+<a href="../page1.htm">Ссылка на page 1</a>
+
+
+<a href="#heading1">Ссылка на heading 1</a>
+
+Ссылка на <a href="mailto:nobody@html.net">Отправить e-mail nobody на HTML.net</a>
+
+<a href="http://www.html.net/" title="Посещайте HTML.net и изучайте HTML">HTML.net</a>
+
+<img src="images/logo.png">
+
+<img src="http://www.html.net/logo.png">
+
+<a href="http://www.html.net">
+<img src="logo.png"></a>
+
+<img src="logo.gif" alt="HTML.net logo">
+
+<img src="logo.gif" title="Learn HTML from HTML.net">
+
+<img src="logo.png" width="141" height="32">
+
+<table border="1" width="30%">
+
+<td align="right" valign="top">Cell 1</td>
+
+<p style="padding:25px;border:1px solid red;">Мне нравится CSS</p>
+
+<img src="bill.jpg" alt="Bill Gates" style="position:absolute;bottom:50px;right:10px;" />
+
+
+
+			   <html>
+	  
+				 <head>
+				 </head>
+ 
+				 <body style="background-color:#ff0000;">
+				 </body>
+ 
+			   </html>
+
+
+
+
+			   <html>
+	  
+				 <head>
+				 </head>
+ 
+				 <body>
+ 
+				   <p><a href="#heading1">Ссылка на heading 1</a></p>
+				   <p><a href="#heading2">Ссылка на heading 2</a></p>
+ 
+				   <h1 id="heading1">heading 1</h1>
+				   <p>Text text text text</p>
+ 
+				   <h1 id="heading2">heading 2</h1>
+				   <p>Text text text text</p>
+	  
+				 </body>
+ 
+			   </html>
+	
+
+
+
+			   <table>
+				 <tr>
+				   <td>Cell 1</td>
+				   <td>Cell 2</td>
+				 </tr>
+				 <tr>
+				   <td>Cell 3</td>
+				   <td>Cell 4</td>
+				 </tr>
+			   </table>
+
+
+
+
+
+
+
+			   <table border="1">
+				 <tr>
+				   <td>Cell 1</td>
+				   <td>Cell 2</td>
+				 </tr>
+				 <tr>
+				   <td>Cell 3</td>
+				   <td>Cell 4</td>
+				 </tr>
+			   </table>
+
+
+			   <table border="1">
+				 <tr>
+				   <td colspan="3">Cell 1</td>
+				 </tr>
+				 <tr>
+				   <td>Cell 2</td>
+				   <td>Cell 3</td>
+				   <td>Cell 4</td>
+				 </tr>
+			   </table>
+	
+
+
+
+<html>
+ 
+				 <head>
+				 <title>My first CSS page</title>
+ 
+				 <style type="text/css">
+	             h1 {font-size: 30px; font-family: arial}
+	             h2 {font-size: 15px; font-family: courier}
+	             p {font-size: 8px; font-family: times new roman}
+	             </style>
+ 
+				 </head>
+ 
+				 <body>
+				 <h1>My first CSS page</h1>
+				 <h2>Welcome to my first CSS page</h2>
+				 <p>Here you can see how CSS works </p>
+				 </body>
+ 
+			   </html>
+	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+	           <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ 
+			   <head>
+			   <title>Title</title>
+			   </head>
+ 
+			   <body>
+			   <p>text text</p>
+			   </body>
+ 
+			   </html>
+	
+
+
+	
+
+
+
+

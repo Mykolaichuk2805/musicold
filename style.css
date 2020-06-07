@@ -1,0 +1,14 @@
+	body {
+	background-color: #FFCC66;
+	background-image: url("картинка 8.jpg");  
+	background-repeat: no-repeat;
+	background-size:100%;
+
+
+	h1 {
+	color: #990000;
+	background-color: #FC9804;
+	}
+	footer{
+	background-color:blue;
+        }
